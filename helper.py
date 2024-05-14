@@ -351,7 +351,7 @@ def get_result():
         #     f"result: {result[0]} \ncase_insensitive: {st.session_state["case_insensitive"]}")
         words_found = st.session_state["words_found"] 
         rec_clause = "Sätzen" if len(result) > 1 else "Satz"
-        st.session_state["msg_result"] = f"{words_found} Wörter in {len(result)} {rec_clause} gefunden."
+        st.session_state["msg_result"] = f"{words_found} Wörter, {len(result)} {rec_clause} gefunden."
         st.session_state["show_result"] = show_result(st.session_state["search_result"])
     
     else:
