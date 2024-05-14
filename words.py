@@ -125,7 +125,7 @@ with tab3:
             t += "ist als Tabelle abrufbar."
             st.markdown(t)
 
-            @st.experimental_dialog("Häfigkeit der Worte")
+            @st.experimental_dialog("Häufigkeit der Worte")
             def content_words():
                 hlp.show_words()
             if st.button("Anzeige der Worthäufigkeiten"):
