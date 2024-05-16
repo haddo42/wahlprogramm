@@ -287,19 +287,13 @@ def mark_words(record):
         Markiert die words_wanted, die im record enthalten sind 
         Gibt nur den markierten record zurück  
     """
-    words_wanted = record[1]
-    rec_to_marked = record[2]
     
-    for word in words_wanted:
-        word = word.replace('*', r'\*')
-        # pattern = r"\b" + word if st.session_state["word_start"] else r"(\b[a-zA-Z\*äÄöÖüÜß]*?)" + word
-        # pattern = pattern +  r"\b" if st.session_state["word_end"] else pattern + r"[a-zA-Z\*äÄöÖüÜß]*?\b"
-        pattern = word
-        match = re.finditer(pattern, rec_to_marked)
-        for item in match:
-            marked_found = f'<span style="color:#de7802;"><b><u>{item.group()}</u></b></span>'
-            rec_to_marked = re.sub(pattern, marked_found, rec_to_marked)
-
+    rec_to_marked = record[2]
+    pattern = build_pattern()
+    match = re.finditer(pattern, rec_to_marked)
+    for item in match:
+        marked_found = f'<span style="color:#de7802;"><b><u>{item.group()}</u></b></span>'
+        rec_to_marked = re.sub(pattern, marked_found, rec_to_marked)
     return rec_to_marked
 
 
