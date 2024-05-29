@@ -2,7 +2,7 @@
 1) _**Eingaben für die Textsuche**_
 
 Das Feld Suchvorgabe nimmt entgegen:
-- ein Wort oder ein Wortteil (jeweils 3 Zeichen Mindestlänge)
+- ein Wort oder ein Wortteil (jeweils 2 Zeichen Mindestlänge)
 - mehrere durch Leerzeichen voneinander getrennte Worte bzw. Wortteile
   
 Das Ergebnis der Suche sind die Sätze aus dem Analysetext, die zu den Suchbegriffen passende Worte enthalten.
@@ -11,7 +11,7 @@ Das Ergebnis der Suche sind die Sätze aus dem Analysetext, die zu den Suchbegri
 
 - Wortanfang: Suchvorgabe wird an den Wortanfängen erkannt.
 - Wortende: Suchvorgabe wird an den Wortenden erkannt
-- Groß-/Kleinschreibung: Die Großschreibung der Worte im Text ignorieren.
+- Kleinschreibung: Die Großschreibung der Worte im Text ignorieren.
 - Worte zusammen: Alle Suchwörter müssen in einem Satz vorkommen.
 
 3) _**Beispiele Suchvorgabe**_
