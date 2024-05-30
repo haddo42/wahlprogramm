@@ -14,19 +14,19 @@ CONSTANTS = {
 #
 # @st.cache_resource
 def load_basic_text(file=CONSTANTS["basic_text_file"]) -> str:
-    """ Lädt den Basistext für den Tab 'Basistext' """
+    """ Lädt den Basistext """
     with open(file, "r", encoding="utf-8") as f:
         return f.read()  
 
 # @st.cache_resource
 def load_info_text(file=CONSTANTS["info_text_file"]):
-    """ Lädt den Text für den Tab 'Info' """
+    """ Lädt den Text für den Tab 'Programminfo' """
     with open(file, 'r', encoding="utf-8") as f:
         return f.read()
 
 # @st.cache_resource
 def load_gliederung_text(file=CONSTANTS["inhalt_text_file"]):
-    """ Lädt den Text für den Tab 'Gliederung' """
+    """ Lädt den Text für den Tab 'Wahlprogramm' """
     with open(file, 'r', encoding="utf-8") as f:
         buls = f.read()
         return buls.split('\n')
