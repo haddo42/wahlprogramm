@@ -9,7 +9,7 @@ Das Ergebnis der Suche sind die Sätze aus dem Analysetext, die zu den Suchbegri
 
 2) _**Checkboxen steuern die Suche**_
 
-- Wortanfang: Suchvorgabe wird an den Wortanfängen erkannt.
+- Wortanfang: Die Suchvorgabe wird an den Wortanfängen erkannt.
 - Wortende: Suchvorgabe wird an den Wortenden erkannt
 - Kleinschreibung: Die Großschreibung der Worte im Text ignorieren.
 - Worte zusammen: Alle Suchwörter müssen in einem Satz vorkommen.
