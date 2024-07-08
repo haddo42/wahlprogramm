@@ -113,11 +113,8 @@ with tab3:
             t += "leicht modifiziert und erweitert."
             st.markdown(t)
 
-            @st.experimental_dialog("Inhaltsverzeichnis")
-            def content_list():
+            with st.popover("Anzeige Inhaltsverzeichnis"):
                 st.html(hlp.show_content())
-            if st.button("Anzeige Inhaltsverzeichnis"):
-                content_list()
 
     with tab3_right:
         with st.container(border=True):
@@ -125,12 +122,8 @@ with tab3:
             t += "ist als Tabelle abrufbar."
             st.markdown(t)
 
-            @st.experimental_dialog("Häufigkeit der Worte")
-            def content_words():
-                hlp.show_words()
-            if st.button("Anzeige der Worthäufigkeiten"):
-                content_words()
-    
+            with st.popover("Anzeige der Worthäufigkeiten"):
+                hlp.show_words()    
 
 # Tab 4: Programminfo
 with tab4:
